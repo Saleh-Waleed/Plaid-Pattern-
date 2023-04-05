@@ -1,0 +1,36 @@
+Cypress Initialization: 
+
+Run the following commands on VS code.
+
+1- npm ci
+
+2- npm install --save-dev typescript
+
+3- npm install cypress --save-dev
+
+4- npx cypress open 
+
+5- Initializatio of Xpath;
+npm install -D cypress-xpath
+
+Add in support/e2e.js
+require('cypress-xpath');
+
+6- Initialization of Iframe
+npm install -D cypress-iframe
+
+7- Generating HTML report
+
+run; "npm i --save-dev cypress-mochawesome-reporter"
+
+Edit config file (cypress.config.js by default)
+
+const { defineConfig } = require('cypress');
+module.exports = defineConfig({                 //add this line to config.js
+reporter: 'cypress-mochawesome-reporter',
+e2e: {
+setupNodeEvents(on, config) {                  //add this line to config.js
+require('cypress-mochawesome-reporter/plugin')(on);
+},
+},
+});
