@@ -1,0 +1,70 @@
+{
+  "name": "client",
+  "version": "1.0.7",
+  "private": true,
+  "dependencies": {
+    "@types/react": "^18.0.33",
+    "@types/react-dom": "^18.0.11",
+    "axios": "^1.3.4",
+    "date-fns": "^2.29.3",
+    "plaid": "^13.0.0",
+    "plaid-threads": "^14.5.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-plaid-link": "^3.4.0",
+    "react-router-dom": "^6.10.0",
+    "react-router-hash-link": "^2.4.3",
+    "react-scripts": "5.0.1",
+    "react-toastify": "^9.1.2",
+    "recharts": "^2.5.0",
+    "sass": "^1.60.0",
+    "socket.io-client": "^4.6.1"
+  },
+  "scripts": {
+    "start": "PORT=3001 react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint": "eslint src -c .eslintrc --ext js,jsx",
+    "preinstall": "npx npm-force-resolutions"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not ie <= 11",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.192",
+    "@types/node": "^18.15.11",
+    "@types/react-router-dom": "^5.3.3",
+    "@types/react-router-hash-link": "^2.4.5",
+    "@types/socket.io-client": "^3.0.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.7",
+    "typescript": "^5.0.3"
+  },
+  "resolutions": {
+    "immer": "9.0.6",
+    "glob-parent": "5.1.2"
+  },
+  "proxy": "http://server:5001",
+  "main": "index.js",
+  "keywords": [
+    "Cypress"
+  ],
+  "author": "Saleh Waleed",
+  "license": "ISC",
+  "description": ""
+}
